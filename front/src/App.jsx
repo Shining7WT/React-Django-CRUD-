@@ -9,7 +9,7 @@ function App() {
 
   const handleSubmit = async (e) => {
     setCount((count) => count + 1);
-    e.preventDefault();
+    // e.preventDefault();
     try {
       const result = await axios.post("hello/", { count });
       console.log(result.data);
