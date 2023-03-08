@@ -21,7 +21,7 @@ function App() {
     // Function to be run every second
     const interval = setInterval(() => {
       handleSubmit();
-    }, 4000);
+    }, 2000);
 
     // Cleanup interval on component unmount
     return () => clearInterval(interval);
