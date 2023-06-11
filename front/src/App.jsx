@@ -12,7 +12,7 @@ function App() {
     e.preventDefault();
     try {
       const result = await axios.post("hello/", { count });
-      console.log(result.data.message)
+      console.log(result.data)
     } catch (error) {
       console.error("There was an error sending the data!", error);
     }
